@@ -1,10 +1,8 @@
-package enumeration.ex2;
+package enumeration.ref1;
 
-public class ClassGradeEx2_1 {
-
+public class ClassGradeRefMain1 {
 
     public static void main(String[] args) {
-
         int price = 10000;
 
         DiscountService discountService = new DiscountService();
@@ -12,8 +10,8 @@ public class ClassGradeEx2_1 {
         int gold = discountService.discount(ClassGrade.GOLD, price);
         int diamond = discountService.discount(ClassGrade.DIAMOND, price);
 
-        System.out.println("basic 등급의 할인금액: " + basic);
-        System.out.println("gold 등급의 할인금액: " + gold);
-        System.out.println("diamond 등급의 할인금액: " + diamond);
+        System.out.println("BASIC 등급의 할인 금액: " + basic);
+        System.out.println("GOLD 등급의 할인 금액: " + gold);
+        System.out.println("DIAMOND 등급의 할인 금액: " + diamond);
     }
 }
