@@ -16,7 +16,7 @@ public class LottoGenerator {
             int number = random.nextInt(45) + 1;
             // 중복되지 않은 경우에만 배열에 추가
             if (isUnique(number)) {
-                lottoNumbers[count++] = number;
+                lottoNumbers[count] = number;
                 count++;
             }
         }
@@ -26,9 +26,7 @@ public class LottoGenerator {
     // 이미 생성된 번호와 중복되는지 검사
     private boolean isUnique(int number) {
         for (int i = 0; i < count; i++) {
-            if(number == lottoNumbers[i]) {
-                return false;
-            }
+            if(number == lottoNumbers[i]) return false;
         }
         return true;
     }
